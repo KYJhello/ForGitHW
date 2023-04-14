@@ -26,16 +26,46 @@
         // 5. k개의 정렬된 배열에서 공통항목을 찾는 Solution을 완성하라. 단, 중복은 허용하지 않는다.
         static int[] FindCommonItems(params int[][] arr)
         {
-            
-            int[] answer = {};
+            // 첫 배열을 받음
+            int[] answer = new int[arr[0].Length];
 
+            foreach(int[] i in arr)
+            {
+                // 새로운 배열마다 중복 갯수 체크용 
+                
+
+                // i 배열의 int j요소를 받음
+                foreach (int j in i)
+                {
+                    answer.Contains(j);
+                    //// j와 answer의 요소 k의 중복체크 
+                    //foreach (int k in answer)
+                    //{
+                    //    if(k == j)
+                    //    {
+                    //        // 배열 i[]와 temp[]의 구성요소를 비교하여 중복요소 있을 시
+                            
+                    //    }
+
+                    //}
+                }
+            }
 
 
             return answer;
         }
         static void Test5()
         {
+            int[] arr1 = { 1, 5, 5, 10 };
+            int[] arr2 = { 3, 4, 5, 5, 10 };
+            int[] arr3 = { 5, 5, 10, 20 };
 
+            int[] ansArr =  FindCommonItems(arr1, arr2, arr3);
+
+            foreach (int i in ansArr)
+            {
+                Console.WriteLine(i);
+            }
         }
 
 
