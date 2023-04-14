@@ -24,8 +24,20 @@
         // 4. 사용자가 입력한 양의 정수의 각 자리수의 합을 구하는 Solution을 완성하라.
 
         // 5. k개의 정렬된 배열에서 공통항목을 찾는 Solution을 완성하라. 단, 중복은 허용하지 않는다.
-        
-        
+        static int[] FindCommonItems(params int[][] arr)
+        {
+            
+            int[] answer = {};
+
+
+
+            return answer;
+        }
+        static void Test5()
+        {
+
+        }
+
 
         static void Main(string[] args)
         {
